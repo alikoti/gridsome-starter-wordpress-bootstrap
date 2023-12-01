@@ -1,6 +1,16 @@
 # kube_deployments
 
 
+# Firewall Rules
+
+  271  iptables -t nat -A POSTROUTING -o ens160 -j MASQUERADE
+  272  sudo iptables -t nat -A PREROUTING -i ens160 -p tcp --dport 32492 -j DNAT --to-destination 192.168.49.2:32492
+
+
+
+
+
+
 
 ## Getting started
 
