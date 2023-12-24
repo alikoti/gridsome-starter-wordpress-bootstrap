@@ -24,7 +24,7 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: asterisk
-          image: db
+          image: mysql:8.2.0
           name: db
           resources: {}
           volumeMounts:
