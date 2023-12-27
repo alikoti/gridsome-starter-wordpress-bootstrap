@@ -9,6 +9,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: db-pv1
   resources:
     requests:
       storage: 100Mi

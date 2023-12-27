@@ -9,6 +9,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: manual
+  storageClassName: db-pv1
   hostPath:
     path: "/root/kube_deployments/dump/asterisk.sql" 

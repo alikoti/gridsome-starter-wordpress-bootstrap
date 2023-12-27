@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: db-pv1
+  name: db-pv0
 spec:
   capacity:
     storage: 100Mi
@@ -9,6 +9,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: manual
+  storageClassName: db-pv0
   hostPath:
     path: "/root/kube_deployments/mysql" 
