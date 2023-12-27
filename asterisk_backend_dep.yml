@@ -22,11 +22,11 @@ spec:
         app: asterisk-web
     spec:
       containers:
-      - image: registry.gitlab.com/home-testing/asterisk_web:latest
+      - image: registry.gitlab.com/home-testing/docker/asterisk_backend
         imagePullPolicy: Always
         name: asterisk-web
         ports:
-        - containerPort: 8080
+        - containerPort: 3004
           protocol: TCP
         resources: {}
         terminationMessagePath: /dev/termination-log

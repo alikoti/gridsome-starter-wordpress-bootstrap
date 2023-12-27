@@ -8,6 +8,6 @@ spec:
     app: asterisk-web
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 3004
+      targetPort: 3004
   type: NodePort
